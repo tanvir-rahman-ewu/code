@@ -1,11 +1,18 @@
 function parent() {
     var a = 10;
-    function chuld() {
+
+
+    function child() {
+        let l = 10;
+        
         console.log(a);
     }
 
-    chuld();
+    return child;
 }
 
+let a = parent();
 
-parent();
+a()
+
+console.dir(a);
